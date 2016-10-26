@@ -41,16 +41,17 @@ import de.codecentric.batch.config.MainConfiguration;
 public class SpringBatchAdmin extends SpringBootServletInitializer {
 
 	/**
-	 * Run application.
-	 * 
-	 * @param args
-	 *            Parameters to pass to SpringApplication.
+	 * Run the application.
+	 * @param args Parameters to pass to SpringApplication.
 	 */
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBatchAdmin.class, args);
 	}
 
 	/**
+         * Configure the application
+         * @param application a builder for the application context
+         * @return the application builder
 	 * @see org.springframework.boot.context.web.SpringBootServletInitializer#configure(org.springframework.boot.builder.SpringApplicationBuilder)
 	 */
 	@Override
